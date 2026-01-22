@@ -5,19 +5,22 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.coding.fizzbuzz.context.FizzBuzzContext;
+
 @SpringBootTest
 class FizzbuzzApplicationTests {
-	
-	// should return true in case of number 3
+
+	FizzBuzzContext context = new FizzBuzzContext();
+
 	@Test
-	void testDivisibleBy3_with3_shouldReturnTrue() {
-		assertTrue(FizzbuzzApplication.calculateDivisibleBy3(3));
-	}
-	
-	// should return false in case of number 5
-	@Test
-	void testDivisibleBy3_with5_shouldReturnFalse() {
-		assertFalse(FizzbuzzApplication.calculateDivisibleBy3(5));
+	void testFizz() {
+		assertEquals("Fizz", context.fizzBuzz(3));
+		assertEquals("Fizz", context.fizzBuzz(6));
 	}
 
+	@Test
+	void testDefault() {
+		assertEquals("1", context.fizzBuzz(1));
+		assertEquals("2", context.fizzBuzz(2));
+	}
 }
