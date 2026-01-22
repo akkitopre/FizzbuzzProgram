@@ -1,5 +1,5 @@
 package com.coding.fizzbuzz.strategy;
 
-public interface FizzBuzzStrategyImpl {
+public interface FizzBuzzProcessor {
 	String process(int number);
 }

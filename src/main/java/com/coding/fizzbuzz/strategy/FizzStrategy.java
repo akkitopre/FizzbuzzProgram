@@ -1,6 +1,6 @@
 package com.coding.fizzbuzz.strategy;
 
-public class FizzStrategy implements FizzBuzzStrategyImpl {
+public class FizzStrategy implements FizzBuzzProcessor {
 
 	@Override
 	public String process(int number) {
