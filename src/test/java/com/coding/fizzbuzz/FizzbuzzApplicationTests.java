@@ -25,6 +25,12 @@ class FizzbuzzApplicationTests {
 	}
 
 	@Test
+	void testFizzBuzz() {
+		assertEquals("FizzBuzz", context.fizzBuzz(15));
+		assertEquals("FizzBuzz", context.fizzBuzz(30));
+	}
+
+	@Test
 	void testDefault() {
 		assertEquals("1", context.fizzBuzz(1));
 		assertEquals("2", context.fizzBuzz(2));

@@ -8,7 +8,8 @@ public class FizzBuzzContext {
 
 	public List<FizzBuzzProcessor> strategies = Arrays.asList(
 			new FizzStrategy(), 
-			new BuzzStrategy()
+			new BuzzStrategy(),
+			new FizzBuzzStrategy()
 	);
 
 	public String fizzBuzz(int number) {
