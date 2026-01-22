@@ -9,21 +9,17 @@ public class FizzbuzzApplication {
 
 	public static void main(String[] args) {
 
-		for(int i = 1; i <= 50; i++)
-		{
+		for (int i = 1; i <= 50; i++) {
 			calculatedValue = calculateDivisibleBy3(i);
-			if(calculatedValue)
-			{
-				System.out.println(i+" -> "+"Fizz");
-			}
-			else
-				System.out.println(i+" -> "+calculatedValue);
+			if (calculatedValue) {
+				System.out.println(i + " -> " + "Fizz");
+			} else
+				System.out.println(i + " -> " + calculatedValue);
 		}
-		
+
 	}
 	
-	public static boolean calculateDivisibleBy3(int number)
-	{
+	public static boolean calculateDivisibleBy3(int number) {
 		return number % 3 == 0;
 	}
 
